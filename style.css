@@ -1,0 +1,117 @@
+/*polices personnalisées*/
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background: url(pics/gris.jpg);
+}
+
+#bloc_page
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#liseret
+{
+    background-image: url(pics/lodyas.png);
+    width: 50px;
+    border-radius: 10px;
+}
+
+#cv
+{
+    width: 95%;
+}
+
+header
+{
+    background: url(pics/separateur.png) repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px 20px;
+    color: rgb(128, 90, 41);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4em;
+    text-align: center;
+    align-items: center;
+}
+
+header h2
+{
+    text-decoration: underline;
+}
+
+header img
+{
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+
+section
+{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    font-size: 1.2em;
+}
+
+section div
+{
+    width: 30%;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section div:hover
+{
+    background-color: rgba(222, 184, 135, 0.5);
+    border-radius: 10px;
+}
+
+section li
+{
+    list-style-image: url(pics/ico_liensexterne.png);
+}
+
+/*responsive*/
+@media all and (max-width : 600px)
+{
+    header
+    {
+        flex-direction: column-reverse;
+    }
+}
+
+@media all and (max-width : 768px)
+{
+    #liseret
+    {
+        display: none;
+    }
+
+    section
+    {
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .theme
+    {
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        font-size: 1.4em;
+    }
+}
