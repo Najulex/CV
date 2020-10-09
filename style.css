@@ -85,8 +85,8 @@ section li
     list-style-image: url(pics/ico_liensexterne.png);
 }
 
-/*responsive*/
-@media all and (max-width : 600px)
+/*media queries*/
+@media all and (max-device-width : 480px)
 {
     header
     {
